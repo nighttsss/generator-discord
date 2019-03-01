@@ -1,0 +1,12 @@
+module.exports = {
+    name: 'commandName',
+    aliases: ['cmdname'], // this command can also now be called by the "cmdname" command!
+    description: 'This is some information about the command!',
+    guildOnly: true, // this command can now only be run inside of a server!
+    ownerOnly: true, // this command can now only be run by the owner of a server!
+    args: true, // you need to pass some args to this command for it to run!
+    usage: '*some cool text*', // in the example, it will tell the user to input some cool text as the argument
+    execute(client, msg, args) {
+        // put all of the command's code here...
+    }
+}

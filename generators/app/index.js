@@ -48,13 +48,13 @@ module.exports = class extends Generator {
         name: 'name',
         message:
           "Your Discord bot's username. (Do not input the discriminator; you can add this later)",
-        default: true
+        default: 'Awesome Username!'
       },
       {
         type: 'input',
         name: 'token',
         message: "Your bot's token (you can add this later)",
-        default: true
+        default: 'supersecrettoken'
       },
       {
         type: 'list',
@@ -85,7 +85,7 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    // base dir
+    // Base dir
     this.fs.copyTpl(
       this.templatePath('bot.js'),
       this.destinationPath('src/index.js')
@@ -101,7 +101,7 @@ module.exports = class extends Generator {
       }
     );
 
-    // commands
+    // Commands
     this.fs.copyTpl(
       this.templatePath('commands/template.txt'),
       this.destinationPath('src/commands/template.txt')
@@ -120,7 +120,9 @@ module.exports = class extends Generator {
 
   install() {
     let deps = ['discord.js', 'fs', 'count-files'];
-    if (this.props.voice) deps.push(this.props.voice);
+    if (this.props.voice) {
+      deps.push(this.props.voice);
+    }
 
     this.npmInstall(deps, {
       save: true

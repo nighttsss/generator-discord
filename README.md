@@ -1,4 +1,4 @@
-# generator-discord [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
+# generator-discord [![NPM version][npm-image]][npm-url]
 
 > A simple Yeoman generator to generate a feature rich Discord.js bot!
 
@@ -47,5 +47,3 @@ MIT © [Jacob Smith](https://jsmiith.github.io/)
 
 [npm-image]: https://badge.fury.io/js/generator-discord.svg
 [npm-url]: https://npmjs.org/package/generator-discord
-[travis-image]: https://travis-ci.org/jsmiith/generator-discord.svg?branch=master
-[travis-url]: https://travis-ci.org/jsmiith/generator-discord

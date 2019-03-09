@@ -33,7 +33,7 @@
     "chalk": "^2.1.0",
     "generator-node": "^2.6.0",
     "lodash": "^4.17.11",
-    "yeoman-generator": "^2.0.1",
+    "yeoman-generator": "^3.2.0",
     "yosay": "^2.0.1"
   },
   "lint-staged": {

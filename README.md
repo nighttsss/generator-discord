@@ -1,5 +1,7 @@
 # generator-discord [![NPM version][npm-image]][npm-url]
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jsmiith/generator-discord.svg)](https://greenkeeper.io/)
+
 > A simple Yeoman generator to generate a feature rich Discord.js bot!
 
 `generator-discord` includes:
